@@ -33,14 +33,14 @@
           font-size: 
         } 
 a:link {
-  color: ;
+  color: lime;
   background-color: transparent;
   text-decoration: none;
 
 }
 
 a:visited {
-  color: ;
+  color: red ;
   background-color: transparent;
   text-decoration: none;
 }
@@ -65,13 +65,15 @@ font-size: 20
   h3 {
 color: yellow ;
 font-family: ;
-font-size: 15
+font-size: 15;
   }
-p1 {
+p {
 color: white ;
 font-family: ;
-font-size: 15
-
+font-size: 15 ;
+line-height: 2 ;
+padding-left: 24px;
+padding-right: 24px;
 }
   ul {
 color: ;
@@ -115,8 +117,75 @@ body{
 <h2>
   WORK STATEMENT
       </h2>
-      <p1>sahgdshgjkhasd</p1>
-      <br> <br> 
+      </center>
+      <h3>
+        introduction
+      </h3>
+    <br>
+      <p> this project was a collaboration between myself and a triad of (mostly still in development) artificial intelligence softwares. one particular AI played the role of the composer and i worked as the arranger— more on that later. the intent of this piece is to hopefully have listeners consider their own stance on how AI technology is and will be implemented in the future in relation to art and art-making. my personal view is that like other scary innovations in art/technology history (automated machines, computers, etc.,) it is best not to vilify something potentially revolutionary because of uncertainty or fear of the unknown. historically, it is best to approach with cautious optimism— any technology can be misused or displace a manual function, but in my view ignoring that possibility doesn’t make it any less likely, and it is good to understand what this thing may be capable of doing. in the art world, the role of the creative being replaced by a machine is a dystopian idea nobody wants to confront, though  music in particular already has an odd relationship with automation and originality. modern mixing DAWs come with a myriad of non AI-powered tools that vastly impact the natural input of a human— pitch correction on vocals is maybe the most easily recognizable & controversial depending on how brazen it is.  <br><br> beyond the role of the producer, copyright and attributing specific melodies to one brain is also problematic in how we treat music as a creation. damien rihel & noah rubin are the creators of ‘all the music’, a project that used music theory to algorithmically generate “all possible melodies”. these were written as MIDIs, copyrighted and released as ’no rights reserved’— essentially, you are free to do whatever you want with it under its copyright status [1]. the project is extremely interesting both as a critique of the copyright system and as a way to unpack the myth of originality in art without coming across as negative or nihilistic. reading about their work made me consider the knee-jerk reaction as an artist to sort of hide any aspect of the piece that could undermine how ‘original’ or impressive my work will be perceived as by an audience or my peers. of course, if you draw too much inspiration without attribution from another human artist, you might get into copyright troubles. this got me wondering, what, if anything, changes when the source of this inspiration can be more directly lifted from an AI generated piece of content without the issue of ownership being clear? <br> <br> i am far from the first person to ask this question, and i didn’t intend on achieving a clear answer. instead, it was an experiment in the creative process that was a lot more creatively complicated than i imagined it would be.
+</p>
+  <br><br>
+  <h3>
+    technologies used
+  </h3>
+  <br>
+  <p> here i will link to the companies/teams/projects whose AI models were used in the creation of this work. any contributors i can find to each project are also listed below.
+    <br>
+    <br>
+    <a href="https://magenta.tensorflow.org/listen-to-transformer"> magenta’s listen to transformer;</a> <br> <em> Cheng-Zhi Anna Huang, Ashish Vaswani, Jakob Uszkoreit, Noam Shazeer, Ian Simon, Curtis Hawthorne, Andrew M. Dai, Matthew D. Hoffman, Monica Dinculescu, and Douglas Eck </em>
+    <br><br> 
+    
+<a href="https://corp.syqel.com/technologies-used/"> syqel</a> for responsive visualizer; see link for the combinations of technologies used in SYQEL generation
+    <br><br>
+    <a href="https://magenta.tensorflow.org/gansynth">magenta’s gansynth</a> for the AI solo track synth; <br><em>Jesse Engel, Kumar Krishna Agrawal, Shuo Chen, Ishaan Gulrajani, Chris Donahue and Adam Roberts</em></p>
+    <p><a href="https://boredhumans.com/art.php"> bored humans</a> for cover art; see <a href="https://github.com/pbaylies/stylegan2">here</a> for source program.</p>   
+    <br><br>
+  <h3>
+    musical composition and arrangement
+    </h3>  
+    <p>
+i listened to about two hours of listen to transformer MIDI generated songs and picked the ones i liked the best. i selected this particular MIDI because it has a dreamlike quality about it that evoked a sort of nostalgia— which is in my opinion a hard emotional reaction to acheive, and i imagined it would complicate the reaction to the piece when audiences learned it was not made by a human. there is a particular point about 3/4s of the way into the song where the key shifts slightly and it becomes more ominous. that, too, had an emotional quality to it i wanted to exaggerate.
+
+my rules were as follows:
+      <br>
+- no adding notes.
+      <br>
+- only delete notes if out of key & the nearest note (transposed up or down) within the key is already being played.
+      <br>
+- no quantizing using logic, only manually adjusting timing to nearest whole/ half bar.
+      <br>
+- no adjusting tempo / key. it is in a key of Dmaj @ 97 BPM.
+      <br>
+- try to preserve the shape of the song as much as possible. this is a more of a goal than a rule, but was important in the creation process.
+      <br>
+- vst / plugins of any kind allowed, including MIDI effects like arpeggiator. much in the same way automation can drastically change human audio input (ie. recordings), i felt it was fair for a human touch to manually choose tools to modify how the AI’s MIDI sounded as long as i preserved the source (abiding by the above stipulations). basically— equality.
+<br><br>
+there is also a line that where the MIDI is untouched and the synthesizer was also created using AI. it’s the track that sounds almost like alien water droplets. i did add a few VSTs like EQ, reverb, delay, spread, and panning. </p>
+    <br><br>
+      
+<h3>
+process reactions
+    </h3>
+    <br>
+ <p>
+i was surprised by my constant desire to ‘do right’ by the AI’s output MIDI. this was truly a collaboration in my mind, so overly modifying it felt almost insulting somehow. maybe it was just a reaction consistent with the ‘spirit’ of the experiment, but it was important that the final product had elements in it i couldn’t necessarily explain and choices i would not have made myself if given the freedom to change it.
+<br><br>
+the AI did a few interesting things, one of which was when it made the chords align with the melody, and the other was when they clashed with each other. when they were harmonious, it was really impressive and i felt a weird sense of pride that ‘we’ had made it work in a way that an average listener would find pleasing. when they did not sound great together— generally because the chord was a complicated/unusual inversion and the melody had an odd timing, it brought me back down in remembering the AI was still learning.
+whenever the AI did something well, i felt it reflected positively on me, and the inverse was true when it sounded off, despite that in either case i did not control how it was generated.
+<br><br>
+it should also be noted that the stuttering/frame drops in the visual are not rendering or recording errors, but are the SYQEL output of the audio file.
+    </p>
+    <br><br>
+    <h3>
+      takeaways
+    </h3>
+    <p>
+before i started this, i thought that the finished product would feel like my own work. honestly, that is not the case. if i were to do this experiment again, i would allow myself to add original melodies and such over what the AI generated, as well as chopping and rearranging the order of some things. additionally, the transformer AI has loads of different melodies, a lot of them sounding very different to this ambient piece this resulted in. maybe if i repeated this same process (ie., not adding my own melody) with a different style, the result would be much different. i found this process rewarding and i am interested in how people will react to the piece, and if the lack of ‘original’ human composition impacts the listening experience.
+<br><br>
+      
+my favorite part of the final piece is from 2:30 - 2:50.       
+    </p>
+    <br><br>
     </center>
 	</body>
 </html>
